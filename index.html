@@ -1,90 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>main page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Icon -->
-	<link rel="stylesheet" href="material-icon-css/material-design-iconic-font.min.css">
-	<!-- Main CSS -->
-	<link rel="stylesheet" type="text/css" href="css/foodApp.css">
+	<title>Login V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-<body id="index">
-	<div class="background-image index">	
-	<!-- Navigation Bar -->
-	</div>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login p-l-55 p-r-55 p-t-40 p-b-54">
+				<form class="login-form validate-form">
+					<span class="login-form-title p-b-49">
+						Login
+					</span>
 
-	<nav>
-			<ul>
-				<li>PalmLeave</li>
-				<li></li>
-			</ul>
-	</nav>
-	<!-- Page Content -->
-	<div class="content">
-		<section class="signin">
-			<div class="container">
-				<div class="signin-content">
+					<div class="wrap-input validate-input m-b-23" data-validate = "Username is required">
+						<span class="label-input">Username</span>
+						<input class="input" type="text" name="username" placeholder="Type your username">
+						<span class="focus-input" data-symbol="&#xf206;"></span>
+					</div>
+
+					<div class="wrap-input validate-input" data-validate="Password is required">
+						<span class="label-input">Password</span>
+						<input class="input" type="password" name="pass" placeholder="Type your password">
+						<span class="focus-input" data-symbol="&#xf190;"></span>
+					</div>
 					
-					<div class="signin-form">
-					<h2 class="form-title">Sign in</h2>
-					<form method="GET" class="register-form" id="login-form">
-					<div class="form-group">
-					<label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-					<input type="text" name="your_name" id="your_name" placeholder="Your Name">
-					</div>
-					<div class="form-group">
-					<label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-					<input type="password" name="your_pass" id="your_pass" placeholder="Password">
-					</div>
-					<div class="form-group">
-					<input type="checkbox" name="remember-me" id="remember-me" class="agree-term">
-					<label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-
-					</div>
-					<div class="form-group form-button">
-						
-					<input type="button" name="signin" id="signin" class="form-submit" value="Log in" onclick="location.href='landingpage.html'";>
-						<a href="landingpage.html">
-							<!-- for animation purposes -->
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+					<div class="text-right p-t-8 p-b-31">
+						<a href="#">
+							Forgot password?
 						</a>
-					</input>
-						
+					</div>
+					
+					<div class="container-login-form-btn">
+						<div class="wrap-login-form-btn">
+							<div class="login-form-bgbtn"></div>
+							<button class="login-form-btn" >
+								Login
+							</button>
+						</div>
 					</div>
 
-					<div class="signin-image">
-					<a href="register1.html" class="signup-image-link">Create an account</a>
+					<div class="txt1 text-center p-t-20">
+						<span>
+							Or Sign Up Using
+						</span>
 					</div>
-					</form>
-					<!-- <div class="social-login">
-						<span class="social-label">Or login with</span>
-						<ul class="socials">
-						<li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-						<li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-						<li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-						</ul>
-					</div> -->
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!-- Footer Content -->
-	<div class="footer">
-		<div class="footer1">
-				<div class="line">
-						<span>Logo</span>	
-						<div class="line ">	</div>
-				</div>
-				<div class="line"><a class="link">System&nbsp;Status</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer-link-separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" target="_blank" name="Privacy">Privacy&nbsp;Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer-link-separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" target="_blank" name="TOC">Terms&nbsp;&amp;&nbsp;Conditions</a></div>
-				<div class="line"><span class="copyright">Copyright © 2019 PalmLeave Inc. All rights reserved.</span></div>
-			</div>
-	</div>
 
-</body>
+					<div class="flex-c-m">
+						<a href="register1.html" class="login-social-item bg1">
+							<i class="fa fa-facebook"></i>
+						</a>
+
+						<a href="register1.html" class="login-social-item bg2">
+							<i class="fa fa-twitter"></i>
+						</a>
+
+						<a href="register1.html" class="login-social-item bg3">
+							<i class="fa fa-google"></i>
+						</a>
+					</div>
+
+					<div class="flex-col-c p-t-10">
+						<a href="register1.html" class="txt2">
+							Or Create An Account
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
 </body>
 </html>
