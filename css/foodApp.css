@@ -3,8 +3,6 @@
   src: url(../font/Roboto-Regular.ttf);
 }
 html, body {
-	margin: 0;
-	padding: 0;
 	font-family: roboto !important;
 	color:white;
 }
@@ -82,10 +80,10 @@ nav > ul > li:last-child{
 /*content*/
 div.content {
 	font-style: inherit;
-	position: fixed;
+	position: relative;
 	height:100%;
 	width:100%;
-	padding-top: 50%;
+	padding-top:20px;
 }
 div.landing {
   position: relative;
@@ -204,7 +202,6 @@ h2 {
   clear: both; }
 .container {
   background: #fff;
-  margin: 0 auto;
   height: 400px;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -216,11 +213,16 @@ h2 {
   -webkit-border-radius: 20px;
   -o-border-radius: 20px;
   -ms-border-radius: 20px;
-  position:relative; }
+  position:relative;
+  top: 120px; 
+  left:50%;
+  margin-left: -270px;
+  max-width:500px;
+  float: center;}
   .container1 {
   background: #fff;
   margin: 0 auto;
-  height: 150px;
+  height: 400px;
   margin :4%;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -232,8 +234,20 @@ h2 {
   -webkit-border-radius: 20px;
   -o-border-radius: 20px;
   -ms-border-radius: 20px;
-  position:relative; }
-
+   position:relative;
+  top: 100px; 
+  left:50%;
+  margin-left: -250px;
+  max-width:400px;
+  float: center;}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    left:50%;
+    margin-left: -170px;
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 .signin{
 	margin-left:7%;
   margin-right:7%;
@@ -241,11 +255,8 @@ h2 {
   padding:10%; 
 }
 .signin-content {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top:10%;
-  padding-bottom:7%; 
-	margin-bottom: 10%}
+  pading:40px;
+}
 .signup {
   margin-left:7%;
   margin-right:7%;
@@ -287,13 +298,6 @@ figure {
   cursor: pointer; }
   .form-submit:hover {
     background: #4292dc; }
-
-
-.signup-image-link {
-  font-size: 14px;
-  color: #222;
-  display: block;
-  text-align: center; }
 
 .term-service {
   font-size: 13px;
@@ -470,33 +474,9 @@ label.valid {
   margin-top: 80px; }
 
 .signin-form {
-  margin-right: 90px;
-  margin-left: 80px; }
+  margin:50px; }
 
-.signin-image {
-  margin-left: 110px;
-  margin-right: 20px
-  }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    width: calc( 100% - 30px);
-    max-width: 100%; } }
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 1200px; } }
-@media screen and (max-width: 768px) {
-  .signup-content, .signin-content {
-    flex-direction: column;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -o-flex-direction: column;
-    -ms-flex-direction: column;
-    justify-content: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -o-justify-content: center;
-    -ms-justify-content: center; }
 
   .signup-form {
     margin-left: 0px;
@@ -505,15 +485,7 @@ label.valid {
     /* box-sizing: border-box; */
     padding: 0 30px; }
 
-  .signin-image {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    order: 2;
-    -moz-order: 2;
-    -webkit-order: 2;
-    -o-order: 2;
-    -ms-order: 2; }
+ 
 
   .signup-form, .signup-image, .signin-form, .signin-image {
     width: auto; }
